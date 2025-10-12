@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-157%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 35s linear infinite;
+}
+
