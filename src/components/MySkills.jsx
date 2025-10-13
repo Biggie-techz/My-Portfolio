@@ -91,10 +91,10 @@ const MySkills = () => {
         <>
             <div className='relative flex flex-col items-center justify-between xl:flex-row gap-10 bg-black/80 w-full p-5 py-20 md:px-20 xl:px-20 mt-16 md:mt-10 lg:mt-20 xl:mt-10 max-w-[1400px] mx-auto'>
                 <div className='lg:max-w-[50%] gap-6 flex flex-col mb-10'>
-                    <p className='text-base font-medium text-neutral-300'>My Skills</p>
-                    <p className='text-4xl font-semibold'>Let's Explore <span className='text-purple-600'>My Skill Set</span></p>
-                    <p className='xl:hidden text-base font-light text-neutral-300'>Right under is a grid of my skills, click on it to view more details</p>
-                    <p className='hidden xl:block text-base font-light text-neutral-300'>By the right is a grid of my skills, click on it to view more details</p>
+                    <p className='text-base md:text-lg lg:text-xl font-medium text-neutral-300'>My Skills</p>
+                    <p className='text-4xl md:text-5xl lg:text-6xl font-semibold'>Let's Explore <span className='text-purple-600'>My Skill Set</span></p>
+                    <p className='xl:hidden text-base md:text-lg lg:text-xl font-light text-neutral-300'>Right under is a grid of my skills, click on it to view more details</p>
+                    <p className='hidden xl:block text-base md:text-lg lg:text-xl font-light text-neutral-300'>By the right is a grid of my skills, click on it to view more details</p>
                     {/* <button className=" text-black font-bold text-xl bg-purple-600 rounded-xl flex items-center justify-center w-fit px-4 py-2">Learn More <ChevronRight className='' /></button> */}
                 </div>
                 <div className='min-w-[50%]'>

@@ -53,7 +53,7 @@ const Experience = () => {
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
-                viewport={{ once: true }} className='p-[60px] bg-[#1f1f1f] min-h-[50%]'>
+                viewport={{ once: true }} className='p-[60px] bg-[#1f1f1f] min-h-[50%] text-base md:text-lg lg:text-xl line'>
                 I'M CURRRENLTY NEW IN THE INDUSTRY WHEN IT COMES TO WORK EXPERIENCE, BUT I'VE BEEN ABLE TO GAIN SOME VALUABLE EXPERIENCE THROUGH INDUSTRIAL TRAINING (SIWES), AND PERSONAL PROJECTS. I'M EXCITED TO CONTINUE LEARNING AND GROWING AS A DEVELOPER.
               </motion.div>
             </div>
