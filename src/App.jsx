@@ -1,10 +1,8 @@
-import React from 'react';
-import Home from './pages/home';
-import ProjectDetails from './pages/ProjectDetails';
+import Home from '../src/pages/home';
+import ProjectDetails from '../src/pages/ProjectDetails';
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import About from './pages/About';
-import Services from './pages/Services';
+import About from '../src/pages/About';
+import Services from '../src/pages/Services';
 
 const App = () => {
   return (
