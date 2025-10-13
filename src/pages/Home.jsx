@@ -7,6 +7,8 @@ import CarouselStrip from '../components/CarouselStrip';
 import Experience from '../components/Experience';
 import MySkills from '../components/MySkills';
 import MyProjects from '../components/MyProjects';
+import Footer from '../components/Footer';
+import GetInTouch from '../components/GetInTouch';
 const Home = () => {
   return (
     <div className="text-2xl font-bold h-screen w-full text-white overflow-scroll">
@@ -19,6 +21,8 @@ const Home = () => {
 
       <MySkills />
       <MyProjects />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };

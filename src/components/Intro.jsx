@@ -20,19 +20,19 @@ const Intro = () => {
 
   return (
     <section className="bg-neutral-950/5 backdrop-blur-xl w-full">
-      <div className="max-w-[1400px] mx-auto text-white w-full px-6 md:px-16 xl:px-24 py-20 flex flex-col md:flex-row justify-between items-center gap-16">
+      <div className="max-w-[1400px] mx-auto text-white w-full px-6 md:px-20 xl:px-24 py-20 flex flex-col md:flex-row justify-between items-center gap-16">
         {/* LEFT SIDE */}
         <div className="w-full md:max-w-[50%]">
           {/* Header */}
           <div className="flex items-center gap-2">
             <img src={logo} alt="Logo" className="w-6 h-6" />
-            <p className="text-sm font-semibold text-purple-600 uppercase tracking-widest">
+            <p className="text-base font-semibold text-purple-600 uppercase tracking-widest">
               Introduction of Myself
             </p>
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mt-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl font-semibold mt-6 leading-tight">
             {displayedText.split(' ').map((word, index) => {
               if (word === 'DEVELOPER') {
                 return <span key={index} className="text-purple-600">{word}</span>;

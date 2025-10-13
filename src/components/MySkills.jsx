@@ -89,13 +89,13 @@ const MySkills = () => {
 
     return (
         <>
-            <div className='relative flex flex-col items-center justify-between xl:flex-row gap-10 bg-black w-full p-5 py-20 md:px-14 xl:px-20 mt-16 md:mt-10 lg:mt-20 xl:mt-10 max-w-[1400px] mx-auto'>
+            <div className='relative flex flex-col items-center justify-between xl:flex-row gap-10 bg-black/80 w-full p-5 py-20 md:px-20 xl:px-20 mt-16 md:mt-10 lg:mt-20 xl:mt-10 max-w-[1400px] mx-auto'>
                 <div className='lg:max-w-[50%] gap-6 flex flex-col mb-10'>
                     <p className='text-base font-medium text-neutral-300'>My Skills</p>
                     <p className='text-4xl font-semibold'>Let's Explore <span className='text-purple-600'>My Skill Set</span></p>
                     <p className='xl:hidden text-base font-light text-neutral-300'>Right under is a grid of my skills, click on it to view more details</p>
                     <p className='hidden xl:block text-base font-light text-neutral-300'>By the right is a grid of my skills, click on it to view more details</p>
-                    <button className=" text-black font-bold text-xl bg-purple-600 rounded-xl flex items-center justify-center w-fit px-4 py-2">Learn More <ChevronRight className='' /></button>
+                    {/* <button className=" text-black font-bold text-xl bg-purple-600 rounded-xl flex items-center justify-center w-fit px-4 py-2">Learn More <ChevronRight className='' /></button> */}
                 </div>
                 <div className='min-w-[50%]'>
                     <div>
@@ -145,7 +145,7 @@ const MySkills = () => {
 
                         return (
                             <motion.div
-                                className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                                className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
                                 onClick={() => setModalData(null)}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}

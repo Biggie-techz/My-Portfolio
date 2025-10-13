@@ -16,7 +16,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col w-full p-5 md:px-14 xl:px-5 pt-36 md:pt-10 lg:pt-20 xl:pt-14 pb-14 max-w-[1400px] mx-auto text-white">
+    <div className="relative flex flex-col w-full p-5 md:px-20 xl:px-5 pt-20 md:pt-10 lg:pt-20 xl:pt-14 pb-14 max-w-[1400px] mx-auto text-white">
       {/* HEADER */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -124,12 +124,12 @@ const Experience = () => {
             viewport={{ once: true }}
           >
             {/* WORK */}
-            <div className='flex flex-col gap-10 xl:justify-between w-full mt-20 xl:mt-0 relative'>
+            <div className='flex flex-col gap-10 xl:justify-between w-full mt-5 xl:mt-0 relative'>
               <div className='flex flex-col items-center justify-center gap-5 pb-5 h-[50%]'>
                 <div className='px-[75px] py-[22px] bg-[#1f1f1f] rounded-full text-[42.8px]'>WORK</div>
                 <ArrowDown className='w-14 h-14 text-gray-600' />
               </div>
-              <div className='p-[60px] bg-[#1f1f1f] min-h-[50%]'>
+              <div className='p-[60px] bg-[#1f1f1f] min-h-[50%] text-xl'>
                 I'M CURRRENLTY NEW IN THE INDUSTRY WHEN IT COMES TO WORK EXPERIENCE, BUT I'VE BEEN ABLE TO GAIN SOME VALUABLE EXPERIENCE THROUGH INDUSTRIAL TRAINING (SIWES), AND PERSONAL PROJECTS. I'M EXCITED TO CONTINUE LEARNING AND GROWING AS A DEVELOPER.
               </div>
             </div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-[60%] lg:h-[80%] xl:h-[90%] w-full p-5 md:px-14 xl:px-5 mt-16 md:mt-10 lg:mt-20 xl:mt-10 max-w-[1400px] mx-auto">
+    <div className="relative flex flex-col h-[60%] lg:h-[80%] xl:h-[90%] w-full p-5 md:px-20 xl:px-5 mt-16 md:mt-10 lg:mt-20 xl:mt-10 max-w-[1400px] mx-auto">
       <motion.img
         initial={{ opacity: 0, scale: 1.1 }}
         whileInView={{ opacity: 1, scale: 1 }}
