@@ -10,7 +10,7 @@ import { ChevronRight, ChevronsUp, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black/80 text-white py-8 relative">
+    <footer className="bg-black/70 text-white py-8 relative">
       <div className="container px-4 sm:px-6 md:px-20 flex flex-col gap-6 md:gap-8">
         {/* Brand Section */}
         <div className="flex items-center gap-2">
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className=' flex flex-col md:flex-row gap-5'>
           <div className="text-left flex flex-col gap-4 md:min-w-[60%]">
             <h3 className="text-lg font-semibold mb-3 text-white">
-              Quick Link
+              Quick Links
             </h3>
             <ul className="space-y-1 text-neutral-500 text-base flex gap-4 justify-start">
               <li>
@@ -63,7 +63,7 @@ const Footer = () => {
                 placeholder="Email Address"
                 className="bg-transparent w-full text-sm focus:outline-none py-5"
               />
-              <button className="flex items-center bg-purple-600 text-white w-[30%] px-5 py-2 rounded-2xl font-semibold hover:bg-purple-500 transition text-sm">
+              <button className="flex items-center text-nowrap bg-purple-600 text-white w-fit px-5 py-2 rounded-2xl font-semibold hover:bg-purple-500 transition text-sm">
                 Sign Up
                 <ChevronRight className="inline-block ml-2 w-5" />
               </button>
