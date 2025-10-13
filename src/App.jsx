@@ -1,8 +1,8 @@
-import Home from '../src/pages/home';
-import ProjectDetails from '../src/pages/ProjectDetails';
+import Home from './pages/Home';
+import ProjectDetails from './pages/ProjectDetails';
 import { Route, Routes } from 'react-router-dom';
-import About from '../src/pages/About';
-import Services from '../src/pages/Services';
+import About from './pages/About';
+import Services from './pages/Services';
 
 const App = () => {
   return (
