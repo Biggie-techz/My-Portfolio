@@ -116,7 +116,7 @@ const NavBar = () => {
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               className="lg:hidden fixed top-20 left-0 w-full h-screen bg-black/95 backdrop-blur-2xl"
             >
-              <div className="flex flex-col items-center justify-center h-full space-y-8">
+              <div className="flex flex-col items-center pt-40 h-full space-y-8">
                 {navItems.map((item, index) => (
                   <motion.div
                     key={item.to}
