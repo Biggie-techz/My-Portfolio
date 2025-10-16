@@ -10,8 +10,8 @@ import { ChevronRight, ChevronsUp, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black/70 text-white py-8 relative">
-      <div className="container px-4 sm:px-6 md:px-20 flex flex-col gap-6 md:gap-8">
+    <footer className="bg-black/70 text-white  p-5 md:px-20 xl:px-5">
+      <div className="container flex flex-col gap-6 md:gap-8 w-full max-w-[1650px] mx-auto relative">
         {/* Brand Section */}
         <div className="flex items-center gap-2">
           <img src={logo} alt="Logo" className="w-8 h-8 md:w-14 md:h-14" />
@@ -21,8 +21,8 @@ const Footer = () => {
         </div>
 
         {/* Quick Links + Email Signup */}
-        <div className=' flex flex-col md:flex-row gap-5'>
-          <div className="text-left flex flex-col gap-4 md:min-w-[60%]">
+        <div className=' flex flex-col justify-between md:flex-row gap-5 w-full '>
+          <div className="text-left flex flex-col gap-4 min-w-1/2 md:max-w-[45%]">
             <h3 className="text-lg font-semibold mb-3 text-white">
               Quick Links
             </h3>
@@ -38,16 +38,6 @@ const Footer = () => {
                   className="hover:text-purple-600 transition"
                 >
                   Projects
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" className="hover:text-purple-600 transition">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#faqs" className="hover:text-purple-600 transition">
-                  Faqs
                 </a>
               </li>
               <li>
@@ -71,8 +61,8 @@ const Footer = () => {
           </div>
 
           {/* Address Section */}
-          <div className="text-left">
-            <h3 className="text-lg font-semibold mb-3">Address</h3>
+          <div className="text-left md:pl-10 min-w-1/2 md:max-w-[45%]">
+            <h3 className="text-lg font-semibold mb-3 w-full">Address</h3>
             <ul className="space-y-5 text-neutral-500 text-base">
               <li>
                 <MapPin className="inline-block w-4 h-4 mr-4 text-purple-600" />
@@ -80,11 +70,11 @@ const Footer = () => {
               </li>
               <li>
                 <Mail className="inline-block w-4 h-4 mr-4 text-purple-600" />
-                support@gmail.com
+                ayonitemiadewole16@gmail.com
               </li>
               <li>
                 <Phone className="inline-block w-4 h-4 mr-4 text-purple-600" />
-                +234 8012345678
+                +234 8126143347
               </li>
             </ul>
           </div>

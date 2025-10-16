@@ -2,6 +2,7 @@ import {
   CheckIcon,
   ChevronRight,
   LetterText,
+  Mail,
   Phone,
   Text,
   User,
@@ -56,14 +57,14 @@ const GetInTouch = () => {
           </div>
         </label>
         <label className="text-lg font-medium">
-          Full Name
+          Email
           <div className="relative mt-2">
             <input
               type="text"
               className="w-full p-3 px-5 rounded-2xl bg-neutral-800 border border-neutral-800 focus:border-white outline-none mt-2 placeholder:text-base placeholder:text-neutral-300/35"
-              placeholder="Ayonitemi Adewole"
+              placeholder="xyz@gmail.com"
             />
-            <User className="absolute right-5 top-[50%] translate-y-[-50%] text-neutral-500 text-sm" />
+            <Mail className="absolute right-5 top-[50%] translate-y-[-50%] text-neutral-500 text-sm" />
           </div>
         </label>
 
@@ -73,7 +74,7 @@ const GetInTouch = () => {
             <input
               type="text"
               className="w-full p-3 px-5 rounded-2xl bg-neutral-800 border border-neutral-800 focus:border-white outline-none mt-2 placeholder:text-base placeholder:text-neutral-300/35"
-              placeholder="xyz@gmail.com"
+              placeholder="+234812345678"
             />
             <Phone className="absolute right-5 top-[50%] translate-y-[-50%] text-neutral-500 text-sm" />
           </div>
@@ -104,7 +105,7 @@ const GetInTouch = () => {
         </label>
 
         <button className="bg-purple-500 text-lg px-4 py-2 flex items-center rounded-xl w-fit">
-          Send Us A Message
+          Send A Message
           <ChevronRight className="inline-block ml-2" />
         </button>
       </div>
