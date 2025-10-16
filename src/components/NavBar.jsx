@@ -43,7 +43,7 @@ const NavBar = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <img src={logo} alt="Logo" className="w-10 h-10 md:w-16 md:h-16 rounded-full border-2 border-purple-500/50" />
+              <img src={logo} alt="Logo" className="w-10 h-10 md:w-16 md:h-16 rounded-full" />
               <p className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 <span className="text-purple-400">AY</span>O
               </p>
