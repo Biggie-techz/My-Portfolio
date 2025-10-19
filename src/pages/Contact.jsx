@@ -7,7 +7,6 @@ import Socials from '../components/Socials';
 const Contact = () => {
   return (
     <>
-      <Background />
       <NavBar />
       <div className="h-screen overflow-y-auto w-full">
         <div className="grid grid-cols-1 p-5 md:px-20 xl:px-5 mt-16 md:mt-10 lg:my-20 xl:mt-10 max-w-[1400px] mx-auto">
