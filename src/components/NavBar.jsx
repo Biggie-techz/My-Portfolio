@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Home, User, Briefcase, Mail } from 'lucide-react';
 import logo from '../assets/logo/logo.png';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +10,15 @@ const NavBar = () => {
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
 
+  const navigate = useNavigate();
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target) && buttonRef.current && !buttonRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
         setIsOpen(false);
       }
     };
@@ -25,7 +31,7 @@ const NavBar = () => {
   const navItems = [
     { to: '/', label: 'Home', icon: Home },
     { to: '/about', label: 'About', icon: User },
-    { to: '/services', label: 'Services', icon: Briefcase },
+    { to: '/projects', label: 'My Projects', icon: Briefcase },
   ];
 
   return (
@@ -43,7 +49,11 @@ const NavBar = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <img src={logo} alt="Logo" className="w-10 h-10 md:w-16 md:h-16 rounded-full" />
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-10 h-10 md:w-16 md:h-16 rounded-full"
+              />
               <p className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 <span className="text-purple-400">AY</span>O
               </p>
@@ -69,7 +79,11 @@ const NavBar = () => {
                       <motion.div
                         layoutId="activeTab"
                         className="absolute inset-0 bg-purple-500/20 rounded-lg"
-                        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                        transition={{
+                          type: 'spring',
+                          stiffness: 300,
+                          damping: 30,
+                        }}
                       />
                     )}
                   </Link>
@@ -78,6 +92,7 @@ const NavBar = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={navigate.bind(null, '/contact')}
                 className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
               >
                 Contact
@@ -147,10 +162,13 @@ const NavBar = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <button className="flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl font-medium text-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
+                  <Link
+                    to={'/contact'}
+                    className="flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl font-medium text-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+                  >
                     <Mail size={24} />
                     Contact
-                  </button>
+                  </Link>
                 </motion.div>
               </div>
             </motion.div>

@@ -29,7 +29,7 @@ const Hero = () => {
         className="flex items-center gap-2 mb-5">
         <img src={logo} alt="" className="w-6 h-6" />
         <p className="text-base text-white uppercase">
-          Full Stack <br /> <span className="text-purple-600">Developer</span>
+          Software <br /> <span className="text-purple-600">Developer</span>
         </p>
       </motion.div>
       <div className="flex flex-col justify-between h-[52%] md:h-[60%] xl:h-[65%]">

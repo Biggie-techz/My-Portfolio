@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo/logo.png';
 import { ArrowDown, Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Experience = () => {
   const [isXl, setIsXl] = useState(false);
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,7 +34,8 @@ const Experience = () => {
           </div>
           <p className='text-2xl sm:text-5xl'>WORK & EDUCATION</p>
         </div>
-        <button className='bg-purple-500 text-black px-6 py-3 text-base w-fit'>CONTACT ME</button>
+        <button className='bg-purple-500 text-black px-6 py-3 text-base w-fit'
+        onClick={navigate.bind(null, '/contact')}>CONTACT ME</button>
       </motion.div>
 
       {/* CONTENT */}

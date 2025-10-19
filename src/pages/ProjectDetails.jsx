@@ -41,7 +41,7 @@ const ProjectDetails = () => {
 
   if (!project) {
     return (
-      <div className="text-white text-center py-20">Project not found</div>
+      <div className="text-white text-center py-20">Projects not found</div>
     );
   }
 

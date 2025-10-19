@@ -10,7 +10,7 @@ import { ChevronRight, ChevronsUp, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black/70 text-white  p-5 md:px-20 xl:px-5">
+    <footer className="bg-black/80 text-white  p-5 md:px-20 xl:px-5">
       <div className="container flex flex-col gap-6 md:gap-8 w-full max-w-[1650px] mx-auto relative">
         {/* Brand Section */}
         <div className="flex items-center gap-2">

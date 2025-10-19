@@ -27,7 +27,7 @@ const MyProjects = () => {
         <div className='relative flex flex-col items-center justify-between w-full p-5 py-20 md:px-20 xl:px-20 md:mt-10 lg:mt-20 xl:mt-10 max-w-[1400px] mx-auto'>
             <div className='flex flex-col items-center gap-3'>
                 <p className='text-lg md:text-xl lg:text-2xl font-medium text-neutral-300'>Latest Works</p>
-                <p className='text-3xl md:text-4xl lg:text-5xl font-medium'>Explore My Popular <span className='text-purple-600'>Projects</span></p>
+                <p className='text-3xl md:text-4xl lg:text-5xl text-neutral-300 font-medium'>Explore My Popular <span className='text-purple-600'>Projects</span></p>
             </div>
             <div className='grid grid-cols-1 gap-5 gap-y-10 mt-10'>
                 {projects.map((project, index) => (
