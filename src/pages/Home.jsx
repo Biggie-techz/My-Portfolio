@@ -11,7 +11,6 @@ import GetInTouch from '../components/GetInTouch';
 const Home = () => {
   return (
     <div className="font-bold h-screen w-full text-white overflow-scroll">
-      <Background />
       <NavBar />
       <Hero />
       <Intro />

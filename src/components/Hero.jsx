@@ -9,7 +9,7 @@ const Hero = () => {
       <motion.img
         initial={{ opacity: 0, scale: 1.1 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: 'easeInOut' }}
+        transition={{delay: 1.5, duration: 1.2, ease: 'easeInOut' }}
         viewport={{ once: true }}
         src={hero}
         alt="Hero background"
@@ -18,13 +18,13 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
         whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-        transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
+        transition={{ delay: 1.8, duration: 1, ease: 'easeInOut' }}
         viewport={{ once: true }}
         className="bg-purple-600 w-[88%] md:w-[60%] lg:w-[50%] xl:w-[37%] aspect-square absolute rounded-full top-[55%] md:top-[55%] lg:top-[48%] xl:top-[60%] left-[50%] translate-[-50%] -z-10"></motion.div>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1, duration: 0.8, ease: 'easeInOut' }}
+        transition={{ delay: 1.6, duration: 0.8, ease: 'easeInOut' }}
         viewport={{ once: true }}
         className="flex items-center gap-2 mb-5">
         <img src={logo} alt="" className="w-6 h-6" />
@@ -36,7 +36,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
+          transition={{ delay: 2, duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
           className="flex items-center lg:items-baseline xl:gap-60">
           <p className="font-semibold text-5xl md:text-7xl lg:text-8xl xl:text-[12rem]">
@@ -49,7 +49,7 @@ const Hero = () => {
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 1, ease: 'easeInOut' }}
+          transition={{ delay: 2.2, duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
           className="font-bold text-white text-2xl md:text-5xl lg:text-7xl xl:text-[6rem] text-right w-full underline underline-offset-8">
           AYONITEMI
@@ -57,7 +57,7 @@ const Hero = () => {
         <motion.p
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.9, duration: 1, ease: 'easeInOut' }}
+          transition={{ delay: 2.4, duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
           className="text-2xl md:text-4xl lg:text-5xl xl:text-7xl bg-black/50 lg:bg-white/5 backdrop-blur-xl w-fit px-8 py-4 rounded-full">
           <span className="font-medium">WEB</span> DEVELOPER

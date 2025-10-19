@@ -8,7 +8,6 @@ const About = () => {
   return (
     <>
       <NavBar />
-      <Background />
       <div className="h-screen overflow-y-auto w-full">
         <div className="grid grid-cols-1 gap-16 p-5 md:px-20 xl:px-5 mt-16 md:mt-10 lg:my-20 xl:mt-10 max-w-[1400px] mx-auto">
           <h1 className="text-5xl font-medium text-white text-center">

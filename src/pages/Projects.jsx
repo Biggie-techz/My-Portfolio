@@ -8,7 +8,6 @@ import MyProjects from '../components/MyProjects';
 const Projects = () => {
   return (
     <>
-      <Background />
       <NavBar />
       <div className="h-screen overflow-y-auto w-full">
         <MyProjects />

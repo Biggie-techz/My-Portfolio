@@ -27,7 +27,6 @@ const ProjectDetails = () => {
   if (loading) {
     return (
       <div className="text-white flex items-center justify-center text-center py-20 w-full h-screen">
-        <Background />
 
         <InfinitySpin
           visible={true}
@@ -47,7 +46,6 @@ const ProjectDetails = () => {
 
   return (
     <>
-      <Background />
       <NavBar />
       <div className="relative flex flex-col h-screen w-full overflow-y-scroll">
         <div className="p-5 md:px-14 xl:px-5 pt-16 max-w-[1400px] mx-auto text-white">
